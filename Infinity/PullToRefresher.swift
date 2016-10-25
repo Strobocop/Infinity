@@ -49,6 +49,7 @@ class PullToRefresher: NSObject {
                 containerView.scrollView = scrollView
                 scrollView.addSubview(containerView)
                 containerView.frame = CGRect(x: 0, y: -defaultHeightToTrigger, width: scrollView.frame.width, height: defaultHeightToTrigger)
+                containerView.autoresizingMask = [.FlexibleWidth]
             }
         }
     }
